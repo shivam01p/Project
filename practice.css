@@ -32,6 +32,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    color: white;
 }
 #navbar {
     height: 60px;
@@ -43,26 +44,9 @@
     color:orange;
 }
 
-#Account {
-    margin-left: 200px;
+a {
+    margin-right: 200px;
     text-decoration: none;
-    color:white;
-}
-
-#Mycart {
-    margin-left: 200px;
-    text-decoration: none;
-    color:white;
-}
-
-#Contact {
-    margin-left: 200px;
-    text-decoration: none;
-    color:white;
-}
-
-#search {
-    margin-left: 200px;
 }
 
 button {
