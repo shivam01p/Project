@@ -30,25 +30,50 @@
 } */
 
 * {
-    padding: 0px;
-    margin: 0px;
-    color: white;
+    padding:0px;
+    margin:0px;
+    color:white;
 }
+
 #navbar {
-    height: 60px;
-    background-color: black;
+    background-color:black;
+    height:60px;
 }
 
 #logo {
-    font-size: 25px;
-    color:orange;
+    font-size:25px;
+    color: #f08804;
 }
 
 a {
-    margin-right: 200px;
+    margin-right:200px;
     text-decoration: none;
 }
 
 button {
-    background-color: #f08804;
+    background-color:#f08804;
+}
+
+main {
+    margin-top: 10px;
+}
+
+#d1 ,#d2 ,#d3 {
+    height:100px;
+    width:100px;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+}
+
+#d1 {
+    background-color: rgba(0,0,0,0);
+}
+
+#d2 {
+    background-color: rgba(0,0,0,0.5);
+}
+
+#d3 {
+    background-color: rgba(0,0,0,1);
 }
