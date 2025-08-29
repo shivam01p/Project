@@ -55,25 +55,17 @@ button {
 }
 
 main {
-    margin-top: 10px;
+    height: 670px;
 }
 
-#d1 ,#d2 ,#d3 {
+.content {
     height:100px;
     width:100px;
-    border-style: solid;
-    border-color: black;
+    border: 2px solid black;
     display: inline-block;
 }
 
-#d1 {
-    background-color: rgba(0,0,0,0);
-}
-
-#d2 {
-    background-color: rgba(0,0,0,0.5);
-}
-
-#d3 {
-    background-color: rgba(0,0,0,1);
+footer {
+    background-color: #0f1111;
+    text-align: center;
 }
