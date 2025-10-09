@@ -1,0 +1,29 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+h1,h2{
+    color:#bd2ddd;
+    text-align:center;
+}
+
+input {
+    margin-top: 2px;
+    margin-left:630px;
+    font-family: cursive;
+}
+
+label{
+    font-family: cursive;
+}
+
+a{
+    display: block;
+    text-align: center;
+}
+
+/* button{
+    display:block;
+    margin:auto;
+} */
