@@ -1,22 +1,47 @@
-div {
+#outer{
     height:100px;
     width:100px;
-    color: red;
+    display:flex;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    /* background-color:blueviolet; */
+    transition: background-color 2s 1s,transform 1.5s ease-in;
+}
+
+#inner{
+    height:90px;
+    width:90px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 2s,font-size 0.5s ease-in,transform 1.5s ease-in;
+    /* background-color:yellow; */
+}
+
+#outer:hover{
+    background-color: indigo;
+    /* transform: scale(2); */
+    transform: translate(10px,-100px);
+}
+
+#inner:hover{
+    background-color: steelblue;
+    font-size: 50px;
+    /* transform: scale(2); */
+    transform: translate(10px,-100px);
+}
+
+
+#inner:active{
+    background-color: navy;
+    font-size: 50px;
+}
+
+#outer:active{
     background-color: black;
-    border: 2px solid blue;
-    /* transition-property: all;
-    transition-duration:1.5s;
-    transition-timing-function:ease-in-out;
-    transition-delay:2s; */
-    transition:font-size 2s steps(3),background-color 1.5s ease-out; /* Short Hands */
-}
-
-div:hover {
-    background-color:yellow;
-    font-size: 100px;
-}
-
-div:active {
-    background-color:white;
-    font-size: 200px;
 }
