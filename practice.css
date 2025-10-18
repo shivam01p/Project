@@ -27,6 +27,7 @@
     background-color: indigo;
     /* transform: scale(2); */
     transform: translate(10px,-100px);
+    transform: skew(180deg);
 }
 
 #inner:hover{
