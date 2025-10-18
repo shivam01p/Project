@@ -1,38 +1,22 @@
-*{
-    box-sizing: content-box;
-}
-
 div {
     height:100px;
     width:100px;
-    font-size: 20px;
-    /* background-color:black; */
+    color: red;
+    background-color: black;
+    border: 2px solid blue;
+    /* transition-property: all;
+    transition-duration:1.5s;
+    transition-timing-function:ease-in-out;
+    transition-delay:2s; */
+    transition:font-size 2s steps(3),background-color 1.5s ease-out; /* Short Hands */
 }
 
-@media(max-width:300px){
-    div{
-        background-color:green;
-        font-size: 5px;
-    }
+div:hover {
+    background-color:yellow;
+    font-size: 100px;
 }
 
-@media(min-width:300px) and (max-width:400px){
-    div{
-        background-color:pink;
-        font-size: 10px;
-    }
-}
-
-@media(min-width:400px) and (max-width:600px) {
-    div{
-        background-color: red;
-        font-size: 20px;
-    }
-}
-
-@media(min-width:600px){
-    div{
-        background-color: blue;
-        font-size: 30px;
-    }
+div:active {
+    background-color:white;
+    font-size: 200px;
 }
