@@ -1,45 +1,58 @@
-div{
-    height: 100px;
-    width: 200px;
-    border-radius:25%;
-    border-top: 5px;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-left: 0px;
-    border-style: solid;
-    /* border: 5px solid transparent; */
-    animation: rotate 10s ease infinite;
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@keyframes rotate {
-    0%{
-        border-color: red;
-        border-top-width: 5px;
-        border-right-width: 0px;
-        border-bottom-width: 0px;
-        border-left-width: 0px;
-        /* transform: rotate(0deg); */
-    }
-    25%{
-        border-color: gold;
-        border-top-width: 0px;
-        border-right-width: 5px;
-    }
-    50%{
-        border-color: orchid;
-        border-right-width: 0px; 
-        border-bottom-width: 5px;
-        /* transform: rotate(180deg); */
-    }
-    75%{
-        border-color:aqua;
-        border-bottom-width: 0px; 
-        border-left-width: 5px;
-    }
-    100%{
-        border-color: red;
-        border-left-width: 0px; 
-        border-top-width: 5px;
-        /* transform: rotate(360deg); */
-    }
+body{
+    padding: 80px;
+}
+
+.card{
+    width:244px;
+    height:370px;
+    border-radius:10px;
+    border:2px solid black;
+}
+
+img{
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.capsule{
+    padding:0 10px 0 15px;
+}
+
+.capsule span{
+    padding: 0 6px;
+    font-size:12px;
+    border: 1px solid black;
+    border-radius: 13px;
+}
+
+.content{
+    padding: 3px 13px;
+}
+
+.content p{
+    padding-top:5px;
+    color: gray;
+}
+
+.button{
+    text-align: center;
+    padding: 7px;
+}
+
+button{
+    margin-top:7px;
+    padding: 7px;
+    color: rgb(15, 133, 223);
+    background-color:rgb(184, 210, 255);
+    /* position: relative;
+    top: 20px;
+    left: 70px; */
+    border-radius:15px;
+    border: none;
 }
