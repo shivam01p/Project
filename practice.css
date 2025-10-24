@@ -4,6 +4,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+:root{                                /* global variable */
+    --bodrad:10px;
+    --bodclr:black;
+}
+
 body{
     padding: 80px;
 }
@@ -11,8 +16,8 @@ body{
 .card{
     width:244px;
     height:370px;
-    border-radius:10px;
-    border:2px solid black;
+    border-radius:var(--bodrad);
+    border:2px solid var(--bodclr);
 }
 
 img{
@@ -27,8 +32,8 @@ img{
 .capsule span{
     padding: 0 6px;
     font-size:12px;
-    border: 1px solid black;
-    border-radius: 13px;
+    border: 1px solid var(--bodclr);
+    border-radius: var(--bodrad);
 }
 
 .content{
@@ -36,8 +41,9 @@ img{
 }
 
 .content p{
+    --txtclr:gray;                          /* Local variable */
     padding-top:5px;
-    color: gray;
+    color: var(--txtclr);   
 }
 
 .button{
