@@ -8,30 +8,47 @@
   </head>
 
   <body>
-    <div class="card">
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
 
-      <div class="img">
-        <img width="230px" src="card.png" alt="img">
-      </div>
-      
-      <div class="capsule">  
-        <span>beauty</span>
-        <span>Nature</span>
-      </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </fieldset>
+    </form>
+
+    <!-- Key Features:
+    -> Visually draws a box around grouped form elements.
+    -> Improves accessibility and semantic structure.
+    -> <legend> provides a title for the fieldset group. -->
+
+    <figure>
+      <img width="300" src="card.png" alt="Sunset over the mountains" />
+      <figcaption>A breathtaking sunset view from the peak.</figcaption>
+    </figure>
+
+    <!-- Key Features:
+    -> Improves semantic clarity and accessibility.
+    -> Often used with <img>, <video>, <audio>, or <pre> elements.
+    -> <figcaption> can appear before or after the media inside <figure>.-->
+
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
     
-      <div class="content">
+    <bdo dir="rtl">This text will be displayed like this.</bdo>
 
-        <h2>Lorem, ipsum dolor.</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, a.
-        </p>
+    <p>One of my favorite novels is <cite>To Kill a Mockingbird</cite> by Harper Lee.</p>
 
-        <div class="button">
-          <button>Read more</button>
-        </div>
+    <p><dfn>HTML</dfn> stands for HyperText Markup Language, which is used to structure web content.</p>
 
-      </div>
-    </div>
-  
+    <p>You <em>must</em> complete the assignment by Friday.</p>
+
+    <p>To save your file, press <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
+
+    <p>The event is scheduled for <time datetime="2025-10-26">October 26, 2025</time>.</p>
+
+
+
   </body>
 </html>
