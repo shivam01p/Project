@@ -1,64 +1,80 @@
 *{
-    margin:0px;
-    padding:0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
 }
 
-:root{                                /* global variable */
-    --bodrad:10px;
-    --bodclr:black;
+header{
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:999;
 }
 
-body{
-    padding: 80px;
+ul{
+    display:flex;
+    background-color:blueviolet;
 }
 
-.card{
-    width:244px;
-    height:370px;
-    border-radius:var(--bodrad);
-    border:2px solid var(--bodclr);
+li{
+    padding:12px;
+    list-style-type:none;
+    color:white;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+main{
+    position:relative;
+}
+
+.bd{
+    position:relative;
+    box-sizing:border-box;
+    height:90vh;
+    width:100%;
+    border:2px solid black;
+    background-color:blue
+}
+
+.sectionA{
+    position:absolute;
+    top:20px;
+    left:200px;
+    height:80vh;
+    width:500px;
+    background-color:black;
+    border:2px solid black;
+}
+
+.sectionB{
+    position:absolute;
+    top:20px;
+    right:200px;
+    height:80vh;
+    width:500px;
+    background-color:white;
+    border:2px solid black;
+}
+
+h1{
+    position:absolute;
+    left:25%;
+    height:150px;
+    width:700px;
+    border-radius:25px;
+    margin-top:50px;
+    text-align:center;
+    border:2px solid black;
 }
 
 img{
-    padding: 7px;
-    border-radius: 10px;
-}
-
-.capsule{
-    padding:0 10px 0 15px;
-}
-
-.capsule span{
-    padding: 0 6px;
-    font-size:12px;
-    border: 1px solid var(--bodclr);
-    border-radius: var(--bodrad);
-}
-
-.content{
-    padding: 3px 13px;
-}
-
-.content p{
-    --txtclr:gray;                          /* Local variable */
-    padding-top:5px;
-    color: var(--txtclr);   
-}
-
-.button{
-    text-align: center;
-    padding: 7px;
-}
-
-button{
-    margin-top:7px;
-    padding: 7px;
-    color: rgb(15, 133, 223);
-    background-color:rgb(184, 210, 255);
-    /* position: relative;
-    top: 20px;
-    left: 70px; */
-    border-radius:15px;
-    border: none;
+    height:50px;
+    width:50px;
+    position:fixed;
+    right:0;
+    bottom:0;
+    border-radius:50%;
 }
