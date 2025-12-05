@@ -1,45 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Practice</title>
-  <link rel="stylesheet" href="practice.css" />
+    <title>Practice</title>
+    <!-- <link rel="stylesheet" href="practice.css">  -->
+    <style>
+        .container {
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(100px, 4fr));
+            grid-template-areas:
+                "nav nav"
+                "side content"
+                "footer footer";
+        }
+
+        .items {
+            /* width:60px; */
+            height: 40px;
+            border: 2px solid black;
+        }
+
+        .item1 {
+            grid-area: nav;
+            color: red;
+            background-color: black;
+        }
+
+        .item2 {
+            color: red;
+            grid-area: side;
+        }
+
+        .item3 {
+            grid-area: content;
+            color: red;
+            background-color: darkblue;
+            /* grid-row:2/3; */
+            /* grid-column:2/4; */
+        }
+
+        .item4 {
+            grid-area: content;
+            color: red;
+            background-color: blue;
+            /* grid-row:3/4; */
+        }
+
+        .item5 {
+            grid-area: side;
+            color: red;
+        }
+
+        .item6 {
+            grid-area: footer;
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#About_us">About us</a></li>
-        <li><a href="#Contact_us">Contact us</a></li>
-        <li><a href="#Services">Services</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
     <div class="container">
-      <div class="sectionA"></div>
-      <div class="sectionB"></div>
+        <div class="items item1">1</div>
+        <div class="items item2">2</div>
+        <div class="items item3">3</div>
+        <div class="items item4">4</div>
+        <div class="items item5">5</div>
+        <div class="items item6">6</div>
     </div>
-    
-    <div class="textbox">
-      <p>
-        Welcome to the sigma <br> 
-        web development express
-      </p>
-    </div>
-  </main>
-  
-  <img src="logo.jpg" alt="logo">
-
-  <footer>
-    
-  </footer>
 
 </body>
 </html>
