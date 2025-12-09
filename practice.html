@@ -5,69 +5,61 @@
     <title>Practice</title>
     <!-- <link rel="stylesheet" href="practice.css">  -->
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            /* align-content:center; */
+            /* flex-wrap:wrap; */
+        }
         .container {
-            border: 2px solid black;
-            display: grid;
-            grid-template-columns: repeat(4, minmax(100px, 4fr));
-            grid-template-areas:
-                "nav nav"
-                "side content"
-                "footer footer";
+            width:600px;
+            height:400px;
+            border: 5px solid black;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        
+        .box{
+            width:400px;
+            height:200px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            border:2px solid black;
+            box-shadow:10px 10px 4px 4px #222222;
+            /* background: linear-gradient(#ff6a00 20%, #ffdd00 40% 60%, #00c9ff 80%); */
+            /* background:radial-gradient(closest-side at 150px, blue 40px, white 100px,  black 170px) */
+            /* background: conic-gradient(from 140deg at 20% 60%,red, yellow, green, darkred)  here 20% is horizontal and 60% is vertical value for the center*/
         }
 
-        .items {
-            /* width:60px; */
-            height: 40px;
-            border: 2px solid black;
-        }
+        /* h1{
+            color: transparent;
+            background:linear-gradient(90deg, orange 40%, red 40% 60%, blue 80%);
+            background:radial-gradient(closest-side at 30px, orange 40%, red 40% 60%, blue 80%);
+            background:conic-gradient(from 180deg at 20% 60%, orange 40%, red 40% 60%, blue 80%);
+            background-clip:text;
+            -webkit-background-clip:text;
+        } */
 
-        .item1 {
-            grid-area: nav;
-            color: red;
-            background-color: black;
-        }
+        
 
-        .item2 {
-            color: red;
-            grid-area: side;
-        }
-
-        .item3 {
-            grid-area: content;
-            color: red;
-            background-color: darkblue;
-            /* grid-row:2/3; */
-            /* grid-column:2/4; */
-        }
-
-        .item4 {
-            grid-area: content;
-            color: red;
-            background-color: blue;
-            /* grid-row:3/4; */
-        }
-
-        .item5 {
-            grid-area: side;
-            color: red;
-        }
-
-        .item6 {
-            grid-area: footer;
-            color: red;
-        }
     </style>
 </head>
 
 <body>
 
     <div class="container">
-        <div class="items item1">1</div>
-        <div class="items item2">2</div>
-        <div class="items item3">3</div>
-        <div class="items item4">4</div>
-        <div class="items item5">5</div>
-        <div class="items item6">6</div>
+        <div class="box">
+            <h1> Something </h1>
+        </div>
     </div>
 
 </body>
