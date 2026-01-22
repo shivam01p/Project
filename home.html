@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- Mobile Layout -->
+
+            <!-- Amazon Logo & Cart -->
+            <div class="nav-sec-1">
+                <div class="nav-logo border">
+                    <img src="assets/images/amazon_logo2.png" alt="Amazon" class="logo" />
+
+                    <span class="logo-text">.in</span>
+                </div>
+
+                <div class="tablet-nav-location border">
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div class="tablet-loc-text">
+                        <span class="loc-text"> Deliver to Ahmedabad</span>
+
+                        <span class="light-text">Update location </span>
+                    </div>
+                </div>
+
+                <div class="desktop-nav-location border">
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div class="desktop-loc-text">
+                        <span class="loc-text"> Deliver to Ahmedabad </span>
+
+                        <span class="light-text"> Update Location </span>
+                    </div>
+                </div>
+
+                <div class="nav-cart-menu">
+                    <i class="fa-solid fa-cart-shopping mobile-cart border"></i>
+
+                    <button class="nav-menu border">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menu & Search bar -->
+            <div class="nav-sec-2">
+                <div class="nav-srh-bar srh-border">
+                    <select class="srh-option">
+                        <option>All</option>
+                    </select>
+
+                    <input type="text" placeholder="Search Amazon.in" class="srh-bar" />
+
+                    <div class="srh-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location & Join Prime -->
+            <div class="nav-sec-3">
+                <div class="mobile-nav-location">
+                    <div class="location-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="location-text">
+                        <span class="light-text">Deliver to Ahmedabad 380000</span>
+                    </div>
+                </div>
+
+                <span class="nav-prime">Join Prime</span>
+
+                <div class="nav-account border">
+                    <span class="muted-text">Hello, sign-in</span>
+                    <span class="light-text">Account & Lists</span>
+                </div>
+
+                <div class="nav-RO border">
+                    <span class="muted-text">Returns</span>
+                    <span class="light-text">& Orders</span>
+                </div>
+
+                <div class="desktop-nav-cart border">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="light-text cart-text">Cart</span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="navbar-bottom-menu">
+            <div class="navigation-menu border hamburger-menu"><i class="fa-solid fa-bars"></i><a href="#" >All</a></div>
+            <div class="navigation-menu border"><a href="#">Fresh</a></div>
+            <div class="navigation-menu border"><a href="#">MX player</a></div>
+            <div class="navigation-menu border"><a href="#">Sell</a></div>
+            <div class="navigation-menu border"><a href="#">Today's deal</a></div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="mobile-hero-section">
+            <div class="hero-card">
+                <img src="https://picsum.photos/400/700?random=1" alt="Hero 1">
+            </div>
+
+            <div class="hero-card">
+                <img src="https://picsum.photos/400/700?random=2" alt="Hero 2">
+            </div>
+
+            <div class="hero-card">
+                <img src="https://picsum.photos/400/700?random=3" alt="Hero 3">
+            </div>
+        </section>
+
+        <!-- Tablet/Desktop Hero Banner (Using Attached Image as Background) -->
+        <section class="tablet-hero-section">
+            <!-- No <img> tag needed now; image is set as background in CSS -->
+        </section>
+
+        <!-- Promotional Sections Grid (4 Cards Matching Screenshot) -->
+        <section class="promo-sections">
+            <div class="promo-grid">
+                <!-- Column 1: Shop by Brand Smartphones -->
+                <div class="promo-column">
+                    <h3>Shop by brand | Deals on top smartphones</h3>
+                    <div class="promo-items">
+                        <div class="promo-item">
+                            <img src="https://m.media-amazon.com/images/I/515voO8OLXL.jpg" alt="Samsung Galaxy">
+                            <p>Samsung Starting ₹749</p>
+                        </div>
+                        <div class="promo-item">
+                            <img src="https://m.media-amazon.com/images/I/51Sfo-BTC7L.jpg" alt="Apple iPhone">
+                            <p>Apple Starting ₹50,249</p>
+                        </div>
+                    </div>
+                    <div class="promo-items">
+                        <div class="promo-item">
+                            <img src="https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/front/thread/20240618/4819035854552714301/1621250818063728640/1621250818063728640.jpg?x-ocs-process=image/format,webp/resize,w_1584" alt="OnePlus Nord">
+                            <p>OnePlus Starting ₹22,999</p>
+                        </div>
+                        <div class="promo-item">
+                            <img src="https://cdn.shopify.com/s/files/1/0615/1631/6729/files/iqoo-z92_480x480.webp?v=1735628276" alt="iQOO Z9">
+                            <p>iQOO Starting ₹10,999</p>
+                        </div>
+                    </div>
+                    <a href="#" class="see-all">See all offers</a>
+                </div>
+
+                <!-- Column 2: Truly Wireless Earbuds, Headphones -->
+                <div class="promo-column">
+                    <h3>Up to 70% off | Truly wireless earbuds, headphones & more</h3>
+                    <div class="promo-items">
+                        <div class="promo-item">
+                            <img src="https://webobjects2.cdw.com/is/image/CDW/7356262?$product-main$" alt="JBL Tune Headphones">
+                            <p>JBL</p>
+                        </div>
+                        <div class="promo-item">
+                            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Product_Highlights_WEB_9_6d5cf619-f22a-4f47-aedf-af941a3a283a.jpg?v=1709015028" alt="boAt Airdopes">
+                            <p>boAt</p>
+                        </div>
+                    </div>
+                    <div class="promo-items">
+                        <div class="promo-item">
+                            <img src="https://m.media-amazon.com/images/I/71ooBl2iQuL._AC_UF894,1000_QL80_.jpg" alt="Party Speaker">
+                            <p>Party Speaker</p>
+                        </div>
+                        <div class="promo-item">
+                            <img src="https://content.abt.com/image.php/jbl-headphone-JBLLIVE670NCBLKAM-flat-folded-view-1.jpg?image=/images/products/BDP_Images/jbl-headphone-JBLLIVE670NCBLKAM-flat-folded-view-1.jpg&canvas=1&width=750&height=550" alt="JBL Over-Ear">
+                            <p>Headphones</p>
+                        </div>
+                    </div>
+                    <a href="#" class="see-all">See all offers</a>
+                </div>
+
+                <!-- Column 3: Home, Kitchen & More -->
+                <div class="promo-column">
+                    <h3>Up to 80% off | Home, kitchen & more</h3>
+                    <div class="promo-items">
+                        <div class="promo-item">
+                            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/631f1b237482723.Y3JvcCwzODQwLDMwMDMsMCww.jpg" alt="Mixer Grinder">
+                            <p>Kitchen essentials</p>
+                        </div>
+                        <div class="promo-item">
+                            <img src="https://m.media-amazon.com/images/I/61NdLJLMSQL._AC_UF894,1000_QL80_.jpg" alt="Furniture">
+                            <p>Furniture</p>
+                        </div>
+                    </div>
+                    <div class="promo-items">
+                        <div class="promo-item">
+                            <img src="https://m.media-amazon.com/images/I/71sNWWGuoYL.jpg" alt="Home Decor">
+                            <p>Home decor</p>
+                        </div>
+                        <div class="promo-item">
+                            <img src="https://assets.aboutamazon.com/dims4/default/39319d5/2147483647/strip/false/crop/2000x1125+0+0/resize/1486x836!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F2f%2F05%2F0522053c4aa2ad6b557d39cfd729%2Fring-devices-2000.jpg" alt="Home Improvement">
+                            <p>Home improvement</p>
+                        </div>
+                    </div>
+                    <a href="#" class="see-all">See all deals</a>
+                </div>
+
+                <!-- Column 4: Electronics & Accessories -->
+                <div class="promo-column">
+                    <h3>Up to 75% off | Electronics & Accessories</h3>
+                    <div class="promo-items">
+                        <div class="promo-item">
+                            <img src="https://m.media-amazon.com/images/I/51EPXSx4G7L._SX350_.jpg" alt="boAt Headphones">
+                            <p>Headphones</p>
+                        </div>
+                        <div class="promo-item">
+                            <img src="https://m.media-amazon.com/images/I/617RAg1YR3L.jpg" alt="Laptop">
+                            <p>Laptop</p>
+                        </div>
+                    </div>
+                    <div class="promo-items">
+                        <div class="promo-item">
+                            <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/ipad-10th-gen-engraving-select-202212-blue-wificell_FMT_WHH?wid=1280&hei=720&fmt=p-jpg&qlt=80&.v=QWZqTzFta1I3WWpFYXN5bHdmSGd2aEVzd1FydmhrZkhxQWNJQVV1eXZGY2tTL1NMRDM1NjhQTXY4RmN5V3kySCtDUkxWbmMxb2VkdStlRDBDQTdpUi9EaHBra2RKb1BxdGJHcHNITzM0dGF0TXdmWG8wSkNlbUlGSE83REJnTFY2bGI3RytJZkI2N3dJUVlFWVByd2Z3" alt="iPad">
+                            <p>iPad</p>
+                        </div>
+                        <div class="promo-item">
+                            <img src="https://www.apple.com/v/watch/bt/images/meta/apple-watch__ywfuk5wnf1u2_og.png" alt="Smartwatch">
+                            <p>Smartwatch</p>
+                        </div>
+                    </div>
+                    <a href="#" class="see-all">See all offers</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="deal-section">
+            <h2 class="deal-title">Trending Deals under ₹999</h2>
+
+            <div class="deal-grid">
+                <div class="deal-item">
+                    <img src="https://picsum.photos/400/700?random=4" 
+                        alt="">
+                    <p class="deal-name">Philips India's No.1 Hair...</p>
+                    <p class="deal-price">₹899</p>
+                    <p class="deal-mrp">M.R.P: ₹1,295</p>
+                    <span class="deal-badge">31% off</span>
+                </div>
+
+                <div class="deal-item">
+                    <img src="https://picsum.photos/400/700?random=5"
+                        alt="">
+                    <p class="deal-name">Women's Rayon Kurta...</p>
+                    <p class="deal-price">₹729</p>
+                    <p class="deal-mrp">M.R.P: ₹2,999</p>
+                    <span class="deal-badge">76% off</span>
+                </div>
+
+                <div class="deal-item">
+                    <img src="https://picsum.photos/400/700?random=6"
+                        alt="">
+                    <p class="deal-name">Samsung Original 25W...</p>
+                    <p class="deal-price">₹799</p>
+                    <p class="deal-mrp">M.R.P: ₹1,699</p>
+                    <span class="deal-badge">53% off</span>
+                </div>
+
+                <div class="deal-item">
+                    <img src="https://picsum.photos/400/700?random=7"
+                        alt="">
+                    <p class="deal-name">Lifelong Scooter for Kids...</p>
+                    <p class="deal-price">₹799</p>
+                    <p class="deal-mrp">M.R.P: ₹3,999</p>
+                    <span class="deal-badge">80% off</span>
+                </div>
+            </div>
+
+            <a href="#" class="see-more">See more</a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-top">
+                <a href="#" class="back-to-top">Back to top</a>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Get to Know Us</h4>
+                    <ul>
+                        <li><a href="#">About Amazon</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Releases</a></li>
+                        <li><a href="#">Amazon Science</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Make Money with Us</h4>
+                    <ul>
+                        <li><a href="#">Sell on Amazon</a></li>
+                        <li><a href="#">Become an Affiliate</a></li>
+                        <li><a href="#">Fulfilment by Amazon</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Amazon Payment Products</h4>
+                    <ul>
+                        <li><a href="#">Amazon Pay</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Let Us Help You</h4>
+                    <ul>
+                        <li><a href="#">Your Account</a></li>
+                        <li><a href="#">Returns Centre</a></li>
+                        <li><a href="#">100% Purchase Protection</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <img src="assets/images/amazon_logo2.png" alt="Amazon" class="logo">
+                </div>
+                <p>© 1996-2026, Amazon.in, Inc. or its affiliates</p>
+            </div>
+        </footer>
+
+    </main>
+</body>
+
+</html>
